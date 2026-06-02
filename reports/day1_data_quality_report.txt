@@ -1,0 +1,13 @@
+DAY 1 – Data Ingestion and Initial Validation
+
+For the first phase of the project, I worked with the ten datasets provided for the Mutual Fund Analytics Capstone. The primary objective was to load the data, understand its structure, and perform basic validation checks before moving on to database creation and analysis.
+
+I began by importing all ten CSV files and reviewing their dimensions, column names, data types, and sample records. All datasets were loaded successfully, and no file-related errors were encountered during the process.
+
+During the initial inspection, I observed that most datasets were complete and did not contain missing values. The only exception was the `yoy_growth_pct` column in the Monthly SIP Inflows dataset, which contained 12 missing entries. After examining the data, I found that these missing values correspond to the initial months in the dataset where previous-year information was not available for calculating year-over-year growth. Therefore, these missing values are expected and do not indicate a data quality issue.
+
+To better understand the Fund Master dataset, I explored the available fund houses, categories, sub-categories, and risk classifications. This helped me gain a clearer understanding of the schemes included in the project and how they are organized across different investment categories.
+
+I also performed an AMFI code validation check to ensure consistency between the Fund Master and NAV History datasets. The Fund Master dataset contained 40 unique AMFI codes, and the NAV History dataset also contained records for the same 40 codes. No AMFI codes were missing, and no duplicate scheme codes were found in the Fund Master dataset.
+
+Based on these checks, the datasets appear to be consistent and suitable for further processing. No major data quality concerns were identified during the ingestion stage. The data is now ready for the next phase of the project, which includes database creation, cleaning, exploratory analysis, and performance evaluation.
